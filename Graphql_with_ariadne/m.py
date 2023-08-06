@@ -1,0 +1,1 @@
+from ariadne import make_executable_schema
