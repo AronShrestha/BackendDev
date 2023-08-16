@@ -38,7 +38,6 @@ class Course:
 
 
 class HLD(Course):
-
     def create_course(self):
         self.Module.append(Exercise_module())
         self.Module.append(Concept_module())
@@ -48,7 +47,6 @@ class HLD(Course):
 
 
 class LLD(Course):
-
     def create_course(self):
         self.Module.append(Exercise_module())
     
@@ -66,13 +64,11 @@ class CourseFactory:
             return courses[course]
         else:
             return None
+    
+    
 
         
 def main():
-    # m = Module()
-    # m.module_designer()
-    # m.show_module()
-
     course1 = CourseFactory().getCourses("HLD")  
     print(type(course1))
     course1.create_course()

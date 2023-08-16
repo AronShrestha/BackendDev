@@ -38,7 +38,6 @@ def caller2(*args, **kwargs):
     print("after necessary beginner decoration I am 2 called")
 
 
-
 def main():
     caller("a","b",5,caller_name='Ibhonik')
     caller2("a","b",5,caller_name='Ibhonik')
