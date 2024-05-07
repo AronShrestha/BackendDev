@@ -38,8 +38,6 @@ routes = [
 user_model.Base.metadata.create_all(bind=engine)
 
 
-
-
 app = Starlette(
                 debug=True,
                 routes=routes,

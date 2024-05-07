@@ -1,0 +1,21 @@
+type User{
+    id: Int!
+    name: String!
+    email: String
+}
+
+input CreateUser{
+    name:String!
+    email:String!
+    password:String!
+}
+
+type CreatedUserRes{
+    status:Int!
+    error:String
+    data:User
+}
+
+imput UserById{
+    id: Int!
+}
